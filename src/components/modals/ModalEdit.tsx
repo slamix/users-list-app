@@ -93,8 +93,6 @@ const ModalEdit = () => {
     reset();
   }
 
-
-
   return (
     <Dialog open={editModalStatus} onClose={handleClose} fullWidth maxWidth="sm" disableRestoreFocus>
       <DialogTitle>Редактирование пользователя</DialogTitle>

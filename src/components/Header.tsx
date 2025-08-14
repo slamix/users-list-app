@@ -29,7 +29,6 @@ const Header = ({ hideCreateButton } : { hideCreateButton: boolean}) => {
             Users list app
           </Typography>
 
-          {/* Кнопка создания пользователя */}
           {!hideCreateButton ? (
             <>
               <Button
@@ -37,13 +36,12 @@ const Header = ({ hideCreateButton } : { hideCreateButton: boolean}) => {
                 startIcon={<AddIcon />}
                 onClick={handleOpen}
                 sx={{
-                  display: { xs: 'none', sm: 'inline-flex' } // показываем только на планшетах и десктопах
+                  display: { xs: 'none', sm: 'inline-flex' }
                 }}
               >
                 Создать пользователя
               </Button>
 
-          {/* Иконка на мобильных */}
               <IconButton
                 color="inherit"
                 onClick={handleOpen}
